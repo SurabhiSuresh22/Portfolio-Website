@@ -256,7 +256,6 @@ img{
   margin-top: 6%;
   font-size: 20px;
   font-weight: bold;
-  color: var(--second-color);
 }
 .details{
   color: var(--second-color);
@@ -286,6 +285,7 @@ img{
 }
 .education_timeline{
   margin-top: 5%;
+  
 }
 .edu_heading{
   text-align:center;
@@ -520,9 +520,9 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: #fff;
-  color: #000000;
-  text-align: left;
+  background-color: black;
+  color: #fff;
+  text-align: center;
   font-weight: var(--font-semi);
   padding: .10rem 0;
 }
@@ -531,11 +531,12 @@ img{
   
 }
 .footer__social{
+  margin: var(--mb-2)
   
 }
 .footer__icon{
   font-size: 1.5rem;
-  color: #000000;
+  color: #fff;
   margin: 0 var(--mb-2)
 }
 
@@ -628,5 +629,7 @@ img{
     right: 10%;
   }
 }
+
+
 
 
