@@ -496,6 +496,7 @@ img{
   color: var(--second-color);
 }
 
+
 /*contact*/
 .contact__input{
   background-color: #1e1f22;
@@ -529,6 +530,22 @@ img{
   box-shadow: 0 .5px 10px 0 #2F9EDB inset, 0 .5px 10px 0 #2F9EDB,
               0 .5px 10px 0 #2F9EDB inset, 0 .5px 10px 0 #2F9EDB;
   text-shadow: 0 0 .5px #2F9EDB, 0 0 .5px #2F9EDB;
+}
+
+.error_container {
+
+  text-align: center;
+}
+.error_head {
+  margin: 30px 0;
+  font-size: 7em;
+  line-height: 1;
+  letter-spacing: -1px;
+  color:var(--second-color);
+}
+.error_sub{
+  font-size: 1.5em;
+  color:var(--second-color);
 }
 
 /* footer*/
