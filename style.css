@@ -665,10 +665,10 @@ img{
 }
 
 ::-webkit-scrollbar{
-  width : 12px;
+  width : 15px;
 }
 ::-webkit-scrollbar-thumb{
  background: linear-gradient(transparent,#00c6ff);
- border-radius: 6px;
+ border-radius: 100px;
 }
 
