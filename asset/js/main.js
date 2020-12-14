@@ -27,13 +27,25 @@ function linkAction(){
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
 
-/* SCROLL REVEAL ANIMATION */
-const sr = ScrollReveal({
-    origin: 'top',
-    distance: '60px',
-    duration: 2000,
-    reset: true
+/* mixitup*/
+const mixer = mixitup('.work__container', {
+    selectors: {
+        target: '.work__img'
+    },
+    animation: {
+        duration: 1000
+    }
 });
+
+const linkPortfolio = document.querySelectorAll('.work__item')
+
+function activePortfolio(){
+    if(linkPortfolio){
+        linkPortfolio.forEach(l => l.classList.remove('active-portfolio'))
+        this.classList.add('active-portfolio')
+    }
+}
+linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 
 //typing animation script
 var typed = new Typed(".typing", {
@@ -43,31 +55,9 @@ var typed = new Typed(".typing", {
   loop: true
 })
 
-/*SCROLL HOME*/
-sr.reveal('.home__title',{});
-sr.reveal('.button',{delay: 600});
-sr.reveal('.home__img',{delay: 300});
-sr.reveal('.home__social-icon',{ interval: 300});
+AOS.init();
 
-/*SCROLL ABOUT*/
-sr.reveal('.about__img',{});
-sr.reveal('.about__subtitle',{delay: 200});
-sr.reveal('.about__text',{delay: 200});
-sr.reveal('.personal_details',{delay: 200});
-sr.reveal('.education_timeline',{delay: 300});
 
-/*SCROLL SKILLS*/
-sr.reveal('.skills__subtitle',{});
-sr.reveal('.skills__text',{});
-sr.reveal('.skills__data',{interval: 200});
-sr.reveal('.skills__img',{delay: 600});
-
-/*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 100});
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 100});
-sr.reveal('.contact__button',{interval: 100});
 
 $("#submit-form").submit((e)=>{
     e.preventDefault()
