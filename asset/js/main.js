@@ -49,7 +49,7 @@ linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
 
 //typing animation script
 var typed = new Typed(".typing", {
-  strings: ["Surabhi S", "a Python Developer","an ML Enthusiast", "a Blogger","a Student"],
+  strings: ["Surabhi S", "a React Developer", "a Blogger"],
   typeSpeed: 60,
   backSpeed: 60,
   loop: true
